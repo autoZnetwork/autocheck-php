@@ -1,22 +1,25 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "autoznetwork/autocheck-php",
+    "description": "",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "autoznetwork",
+        "autocheck-php"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/autoZnetwork/autocheck-php",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Collin Pedersen",
+            "email": "collin@autoznetwork.com",
+            "homepage": "https://www.autoznetwork.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.2",
+        "kamermans/guzzle-oauth2-subscriber": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
@@ -25,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Autoznetwork\\AutoCheck\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Autoznetwork\\AutoCheck\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,15 +46,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/spatie"
-        },
-        {
-            "type": "other",
-            "url": "https://spatie.be/open-source/support-us"
-        }
-    ]
+    "prefer-stable": true
 }

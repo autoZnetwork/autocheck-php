@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Autoznetwork\AutocheckPhp\Tests;
 
 use PHPUnit\Framework\TestCase;
 
