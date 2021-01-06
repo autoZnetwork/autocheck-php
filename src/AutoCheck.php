@@ -86,6 +86,5 @@ class AutoCheck
 
     public function saveToken()
     {
-
     }
 }
